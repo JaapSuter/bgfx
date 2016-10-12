@@ -501,7 +501,9 @@ namespace entry
 			thread.init(mte.threadFunc, &mte);
 			m_init = true;
 
-			m_eventQueue.postSizeEvent(findHandle(m_hwnd[0]), m_width, m_height);
+            const WindowHandle handle = findHandle(m_hwnd[0]);
+            m_eventQueue.postWindowEvent(handle, m_hwnd[0]);
+            m_eventQueue.postSizeEvent(findHandle(m_hwnd[0]), m_width, m_height);
 
 			MSG msg;
 			msg.message = WM_NULL;

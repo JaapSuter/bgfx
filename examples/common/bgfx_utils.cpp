@@ -127,7 +127,9 @@ static bgfx::ShaderHandle loadShader(bx::FileReaderI* _reader, const char* _name
 		break;
 	}
 
-	strcpy(filePath, shaderPath);
+    // Todo, Jaap Suter, October, fix this last minute dirty hack
+    strcpy(filePath, "Data/Client/bgfx/runtime/");
+	strcat(filePath, shaderPath);
 	strcat(filePath, _name);
 	strcat(filePath, ".bin");
 

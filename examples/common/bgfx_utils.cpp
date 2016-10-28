@@ -21,12 +21,12 @@ namespace stl = tinystl;
 #include "entry/entry.h"
 #include <ib-compress/indexbufferdecompression.h>
 
-#define LODEPNG_NO_COMPILE_ENCODER
-#define LODEPNG_NO_COMPILE_DISK
-#define LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS
-#define LODEPNG_NO_COMPILE_ERROR_TEXT
+// #define LODEPNG_NO_COMPILE_ENCODER
+// #define LODEPNG_NO_COMPILE_DISK
+// #define LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS
+// #define LODEPNG_NO_COMPILE_ERROR_TEXT
 #define LODEPNG_NO_COMPILE_ALLOCATORS
-#define LODEPNG_NO_COMPILE_CPP
+// #define LODEPNG_NO_COMPILE_CPP
 #include <lodepng/lodepng.h>
 
 #include "bgfx_utils.h"
